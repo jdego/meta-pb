@@ -61,15 +61,15 @@ SRC_URI = "\
 	file://0001-Stripped-back-pocketbeagle-devicetree.patch \
 "
 
-LINUX_VERSION ?= "4.14.18"
+LINUX_VERSION ?= "5.4"
 LINUX_VERSION_EXTENSION_append = "-pocketbeagle"
 
 # Modify SRCREV to a different commit hash in a copy of this recipe to
 # build a different release of the Linux kernel.
 # tag: v4.14.18 81d0cc85caabe062991ea45ddada814835d47fb0
-SRCREV_stable="81d0cc85caabe062991ea45ddada814835d47fb0"
+SRCREV_stable="bdc3a8f6a8e8b798c46683a98b97d52b3a5708e4"
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+PV = "5.4.66"
 
 # Override COMPATIBLE_MACHINE to include your machine in a copy of this recipe file.
 
