@@ -9,7 +9,7 @@
 #   To use linux-yocto-custom in your layer, copy this recipe (optionally
 #   rename it as well) and modify it appropriately for your machine. i.e.:
 #
-#     COMPATIBLE_MACHINE_yourmachine = "yourmachine"
+#   COMPATIBLE_MACHINE_yourmachine = "yourmachine"
 #
 #   You must also provide a Linux kernel configuration. The most direct
 #   method is to copy your .config to files/defconfig in your layer,
@@ -71,6 +71,6 @@ SRCREV_stable="81d0cc85caabe062991ea45ddada814835d47fb0"
 
 PV = "${LINUX_VERSION}+git${SRCPV}"
 
-# Override COMPATIBLE_MACHINE to include your machine in \
-a copy of this recipe file.
+# Override COMPATIBLE_MACHINE to include your machine in a copy of this recipe file.
+
 COMPATIBLE_MACHINE = "pocketbeagle"
