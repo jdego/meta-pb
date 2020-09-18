@@ -56,7 +56,7 @@ require recipes-kernel/linux/linux-stable.inc
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus’ tree.
 SRC_URI = "\
-	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-${LINUX-VERSION}.y \
+	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;protocol=git;nocheckout=1;name=stable \
 	file://defconfig \
 	file://0001-Stripped-back-pocketbeagle-devicetree.patch \
 "
