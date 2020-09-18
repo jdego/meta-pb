@@ -51,7 +51,7 @@
 #            SRC_URI += "file://feature.scc"
 #
 inherit kernel
-require linux-stable.inc
+require recipes-kernel/linux/linux-stable.inc
 
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus’ tree.
