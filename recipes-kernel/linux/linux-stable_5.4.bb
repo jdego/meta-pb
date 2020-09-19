@@ -56,7 +56,7 @@ require recipes-kernel/linux/linux-stable.inc
 # Override SRC_URI in a copy of this recipe to point at a different source
 # tree if you do not want to build from Linus’ tree.
 SRC_URI = "\
-	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;protocol=git;nocheckout=1;name=stable \
+	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-${LINUX-VERSION}.y \
 	file://defconfig \
 	file://0001-Stripped-back-pocketbeagle-devicetree.patch \
 "
@@ -67,7 +67,7 @@ LINUX_VERSION_EXTENSION_append = "-pocketbeagle"
 # Modify SRCREV to a different commit hash in a copy of this recipe to
 # build a different release of the Linux kernel.
 # tag: v4.14.18 81d0cc85caabe062991ea45ddada814835d47fb0
-SRCREV_stable="bdc3a8f6a8e8b798c46683a98b97d52b3a5708e4"
+SRCREV="bdc3a8f6a8e8b798c46683a98b97d52b3a5708e4"
 
 PV = "5.4.66"
 
